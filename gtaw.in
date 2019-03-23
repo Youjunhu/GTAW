@@ -1,0 +1,141 @@
+  &gfile_namelist
+! gfile_name="g160710.03000" !g160710.03300, from WangQi, equilibrium reconstructed by Kinetic-Efit from DIIID data
+! gfile_name="g038300.03900" !from Guoqiang Li, an equilibrium constructed by Kinetic-Efit
+!gfile_name="65020_gfile/g065020.004360"
+!gfile_name="65020_gfile/g065020.004520"
+!gfile_name="65020_gfile/g065020.004560"
+!gfile_name="65020_gfile/g065020.004620"
+!gfile_name="65020_gfile/g065020.004760"
+!  gfile_name="gfile/g048916.04500" !from Jinping Qian, an equilibrium with reversed magnetic shear 
+!gfile_name="gfile/g059954.003100"
+!gfile_name="gfile/g062585.02800" !zhengzheng
+! gfile_name="d3d160710_4200/g160710.04200"
+! gfile_name="d3d160710_4800/g160710.04800"
+  ! gfile_name="62585/g062585.02730" !from Liu Hai Qing
+!  gfile_name="g166495.03585" !from huang_juan
+!     gfile_name="g166495.03650" !from huang_juan
+!  gfile_name="g062585.03800_offline_effit"
+! gfile_name="g062585.003820_rfefit"
+! gfile_name="gfile_Chease0" !from Hao_guang_zhou
+! gfile_name="gfile/gfile_Chease1" !from Hao_guang_zhou
+!  gfile_name="gfile_miller" !
+!  gfile_name="gfile_miller_new" !
+!gfile_name="g048059.03650" !from zhengzheng
+!  gfile_name="g056963.03418" !from zhengzheng, in this discharge AE-like high frequency modes are observed in experiments
+!  gfile_name="gfile/g051063.03000" !
+!  gfile_name="gfile/g069358.04717" !
+!  gfile_name="gfile/g056933.03348" 
+!gfile_name="gfile/yang_san_xiang2017-3-29/CFBAL_0.40/gfile.OUT"
+!gfile_name="gfile/g062676.003490"
+!  gfile_name="g052340.3150.03150"
+!  gfile_name="g051063.03000" !
+!gfile_name ="g056963.03418" from zhengzheng's kinetic effit
+!gfile_name="gfile/48605/g048605.04624" !kinetic efit with q=1 constraint from G. LI 
+!gfile_name="g048916.05000" !from J.P. Qian, an equilibrium with reversed magnetic shear 
+ !gfile_name="g048916.04400"
+ ! gfile_name="g052340.03150"
+  !gfile_name="g052340.03450"
+!  gfile_name="g051063.04500" !from Haiqing Liu and S.B. Zhang, (constructed by Jinping Qian by using POINT diagnostic constraint).
+!gfile_name="g048605.04686" !from L.Q. Xu ,for fishbone simulation
+!  gfile_name="g048605.04620_kin" !kinetic effit gfile from G. Li
+ ! gfile_name="g048605.04764" !from Zhong_guo_qiang, for TAE simulation
+  !gfile_name="g038300.03900_teq_up_down_sym"
+ !  gfile_name="g048604.005001"
+!  gfile_name='gfile_solovev'
+  gfile_name='gfile_circular'
+  !gfile_name='g013606.07104'
+  !gfile_name='g142111.00750'
+  !gfile_name='gfile/g065010.003933'
+  /
+
+
+  &electron_density_profile_namelist
+   mass_number_ion=2   !Mass number of ions of the working gas (main plasma)
+   use_cylindrical_data=.false. !whether to use electron number density in the cylindrical coordinates (ne measured in experiments ususally use cylindrical coordinates)
+!   cylindrical_ne_file="density_profile_hao_guang_zhou" !this file is used only when use_cylindrical_data=.true.
+ cylindrical_ne_file="NAN" !this file is used only when use_cylindrical_data=.true.
+!density_file="ne_g038300.03900" !this file is used only when use_ts_data=.false.
+!density_file="65020_ne/4.36000_ne.txt"
+!density_file="65020_ne/4.52000_ne.txt"
+!density_file="65020_ne/4.56000_ne.txt"
+!density_file="65020_ne/4.62000_ne.txt"
+!density_file="65020_ne/4.76000_ne.txt"
+ ! unit_of_ne=1.0d6 !in unit of 1/m^3, unit_of_ne is the unit used for the elctron number density data stored in density_file
+ !unit_of_ne=1.803074460437068d+019 !in unit of 1/m^3, unit_of_ne is the unit used for the elctron number density data stored in density_file 
+unit_of_ne=1.d19 !in unit of 1/m^3, unit_of_ne is the unit used for the elctron number density data stored in density_file 
+!  unit_of_ne=1.80307d19 !in unit of 1/m^3, unit_of_ne is the unit used for the elctron number density data stored in density_file
+!  unit_of_ne=1.1811d19 !in unit of 1/m^3, unit_of_ne is the unit used for the elctron number density data stored in density_file
+!  density_file="ne_pro4600ms.dat" !this file is used only when use_ts_data=.false.
+!  density_file="ne_g052340.3150.03150" !this file is used only when use_ts_data=.false.
+!  density_file="ne62585.02800" 
+!  density_file="d3d160710_4800/ne_d3d160710_4800" 
+  !  density_file="62585/2.73000_ne.txt"
+!    density_file="ne166495.03650"
+!  density_file="tmp_density" !this file is used only when use_ts_data=.false.
+!  density_file="ne_g048916.04500" !scaled from EAST#38300 
+!  density_file="ne_miller_sunist" 
+!  density_file="ne_Chease1.txt" 
+!  density_file="ne_solovev" !this file is used only when use_ts_data=.false.
+!  density_file="ne_g048605.04620_kin.txt" !from G. LI
+!  density_file="gfile/ne69358@4717ms.txt" 
+!  density_file="gfile/ne56933.03348" 
+!density_file="gfile/yang_san_xiang2017-3-29/CFBAL_0.40/density1.txt"
+!density_file="gfile/62676ne_gfile.txt"
+density_file="ne_files/65010_ne_POINT.txt"
+!  density_file="ne_g160710.03000.txt" !used only when use_ts_data=.false.
+!  density_file="ne_fitted_48605at4.7s" !this file is used only when use_ts_data=.false.
+!density_file="ne_pro4500ms.dat"
+  !density_file="electron_number_density_uniform.dat"
+!  prof_grid_type="pfn"
+    prof_grid_type="tfn_sqrt"
+  !  prof_grid_type="pfn_sqrt"
+    prof_grids_data_available=.true. !if .false., uniform grid in [0:1] will be assumed
+  prof_impurity_density_available=.false.
+  /
+
+&poloidal_angle
+!poloidal_angle_type='straight-line' 
+poloidal_angle_type='equal-arc'
+/
+
+&radial_coordinate
+!radial_coordinate_type='tfn_sqrt'
+radial_coordinate_type='gs_pf' !using A_phi*R as the radial coordinate
+!radial_coordinate_type='pfn'   !using normalized poloidal magntic flux as the radial coordinate
+inner_pfn=0.01 !the first flux surface is chosen at psi=psi_axis+delta_psi, where delta_psi=(psi_lcfs-psi_axis)*inner_pfn
+bdry_pfn=0.99 !the radial boundary is choosen at psi_bdry= psi_axis+(psi_lcfs-psi_axis)*bdry_pfn
+!the following two parameters are used only when radial coordiate type is equal-toroidal-flux-sqrt
+!sqrt_ntf_in=1.71444896485295900E-002 !the value of sqrt_normalized_toroidal_flux of the first radial location
+!sqrt_ntf_in=1.0E-002 !the value of sqrt_normalized_toroidal_flux of the first radial location
+!sqrt_ntf_in=1.6663921542449292E-002 !read from rpsi(3) of mega code
+sqrt_ntf_in=1.7144489648529590E-002 !read from rpsi(3) of mega code, !the value of sqrt_normalized_toroidal_flux of the first radial location
+!sqrt_ntf_bdry=0.98513223069068678      !read from rpsi(lpsi-1) of mega code,!the value of sqrt_normalized_toroidal_flux of the boundary radial location
+sqrt_ntf_bdry=0.99      !read from rpsi(lpsi-1) of mega code,!the value of sqrt_normalized_toroidal_flux of the boundary radial location
+/
+
+  &control_parameters
+  nh=2 !troidal mode number
+  gamma=1.67d0 !polytrope index, !gamma=zero is equivalent with zero pressure
+!  gamma=0.0d0 !polytrope index, !gamma=zero is equivalent with zero pressure
+  recalculate_flux_coordinates=.true.
+  calculate_continua=.true.
+  slow_sound_approximation=.true.
+  calculate_global_mode=.false.
+  filter=.false.
+  calculate_fast_ions_pressure=.false.
+  /
+
+&global_mode_parameters
+guess_freq=75. !guess frequency of the gap mode,in unit of kHz
+rad_left=0.15 !square root of the normalized toroidal flux, left end-point used in finding global modes
+rad_right=0.9 !square root of the normalized toroidal flux, right end-point used in finding global modes
+restart_from_last=.false. !to refine the roots
+interation_n=10 !number of interation used in the newton root finder
+/
+
+&tf_coils_parameters
+!these parameters are used to estimate the vaccum toroidal magnetic field by using the formula Bphi=mu0*num_tf_group*turns*Is/(twopi*R)
+num_tf_groups=16 !for EAST
+turns=130 !for EAST
+current_per_turn=-10000 !current in one turn (unit Amper)
+/
